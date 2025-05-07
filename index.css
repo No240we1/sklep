@@ -1,0 +1,83 @@
+body {
+    font-family: 'Arial', sans-serif; /* Nowoczesna czcionka */
+    margin: 0; /* Pełna szerokość */
+    background-color: #121212; /* Ciemne tło dla kontrastu */
+    color: #e0e0e0; /* Jasny kolor tekstu */
+    line-height: 1.6;
+    overflow-x: hidden; /* Zapobiega przewijaniu w poziomie */
+}
+.container {
+    max-width: 960px; /* Większa, standardowa szerokość */
+    margin: 40px auto; /* Większy margines góra/dół */
+    background-color: #1e1e1e; /* Ciemniejszy kontener */
+    padding: 40px;
+    border-radius: 12px; /* Większe zaokrąglenie rogów */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Mocniejszy cień */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.5s ease-out forwards;
+}
+@keyframes fadeIn {
+    to { opacity: 1; transform: translateY(0); }
+}
+h2 {
+    color: #bb86fc; /* Akcentujący kolor */
+    border-bottom: 3px solid #bb86fc;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    text-align: center; /* Wyśrodkowany nagłówek */
+}
+.paypal-button {
+    text-align: center; /* Wyśrodkowany przycisk PayPal */
+    margin-bottom: 30px;
+}
+.paypal-button p {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    color: #ccc;
+}
+.button {
+    display: inline-block;
+    background-color: #00bcd4; /* Inny, bardziej "tech" kolor */
+    color: #fff;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease; /* Płynne przejście hover */
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.button:hover {
+    background-color: #00acc1;
+}
+.collection-item {
+    background-color: #2c2c2c; /* Ciemniejsze tło dla elementów kolekcji */
+    border: none; /* Bez obramowania */
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out; /* Efekt "podnoszenia" */
+}
+.collection-item:hover {
+    transform: translateY(-5px);
+}
+.collection-item h3 {
+    margin-top: 0;
+    color: #e0e0e0;
+    margin-bottom: 10px;
+}
+.collection-item p {
+    margin-bottom: 15px;
+    color: #aaa;
+}
+.collection-item .button {
+    background-color: #bb86fc; /* Akcentujący kolor dla przycisków w kolekcji */
+}
+.collection-item .button:hover {
+    background-color: #9c6ade;
+}
+/* Dodatkowy efekt hover dla całej sekcji PayPal */
+.paypal-button:hover .button {
+    transform: scale(1.05);
+}

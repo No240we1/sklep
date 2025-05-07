@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instrukcja Zakupu</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="strona_zakupu.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Jak Dokonać Zakupu</h2>
+        <p>Aby dokonać zakupu, postępuj zgodnie z poniższą instrukcją:</p>
+
+        <ol>
+            <li><strong>Wyślij e-mail na adres:</strong> <a href="mailto:no240we1@gmail.com">no240we1@gmail.com</a></li>
+            <li><strong>W treści e-maila podaj:</strong>
+                <ul>
+                    <li>Nazwę produktu, który chcesz kupić.</li>
+                    <li>Cenę produktu.</li>
+                </ul>
+            </li>
+            <li><strong>Dołącz zrzut ekranu (screenshot)</strong> <a href="https://www.paypal.com/donate/?hosted_button_id=AHNGKPD3MXT48" target="_blank" id="paypal-link">potwierdzenia dokonania płatności</a>.</li>
+            <li>Po otrzymaniu Twojego e-maila i potwierdzenia płatności, wyślemy Ci zakupiony produkt.</li>
+        </ol>
+
+        <p><strong>Uwaga:</strong> Czas dostawy produktu jest nieokreślony. Dołożymy wszelkich starań, aby dostarczyć go jak najszybciej.  W razie problemów z dostawą, skontaktujemy się z Tobą w celu ustalenia dalszych kroków (np. zwrot pieniędzy).</p>
+        <a href="index.html" class="button powrot-button">Powrót do strony głównej</a>
+    </div>
+    <script>
+        document.getElementById('paypal-link').addEventListener('click', function(event) {
+            // Tutaj możesz dodać kod śledzenia kliknięcia, jeśli potrzebujesz
+            console.log('Użytkownik kliknął w link do PayPal.');
+        });
+    </script>
+</body>
+</html>
